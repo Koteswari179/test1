@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Koteswari179.github.io/test1/static/css/main.60a5d51a.css",
+    "main.js": "/Koteswari179.github.io/test1/static/js/main.467791da.js",
+    "static/js/453.56f46472.chunk.js": "/Koteswari179.github.io/test1/static/js/453.56f46472.chunk.js",
+    "static/media/remixicon.svg?t=1718271040674": "/Koteswari179.github.io/test1/static/media/remixicon.f38690bdde29bddbc211.svg",
+    "static/media/boxicons.svg": "/Koteswari179.github.io/test1/static/media/boxicons.9e2b21b135bc7d4c803f.svg",
+    "static/media/remixicon.eot?t=1718271040674": "/Koteswari179.github.io/test1/static/media/remixicon.d87042cf9a3f67d1cab2.eot",
+    "static/media/remixicon.ttf?t=1718271040674": "/Koteswari179.github.io/test1/static/media/remixicon.88da6179288d7835c2f0.ttf",
+    "static/media/boxicons.eot": "/Koteswari179.github.io/test1/static/media/boxicons.65a8ce52fc5427e8f94d.eot",
+    "static/media/boxicons.woff": "/Koteswari179.github.io/test1/static/media/boxicons.d12afc36557395143e4b.woff",
+    "static/media/boxicons.ttf": "/Koteswari179.github.io/test1/static/media/boxicons.db9ddb1898dbd76badca.ttf",
+    "static/media/remixicon.woff?t=1718271040674": "/Koteswari179.github.io/test1/static/media/remixicon.1bdc36c90398c9d667d1.woff",
+    "static/media/bootstrap-icons.woff?": "/Koteswari179.github.io/test1/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
+    "static/media/remixicon.woff2?t=1718271040674": "/Koteswari179.github.io/test1/static/media/remixicon.8aece9ab0de67b79cfda.woff2",
+    "static/media/bootstrap-icons.woff2?": "/Koteswari179.github.io/test1/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
+    "static/media/boxicons.woff2": "/Koteswari179.github.io/test1/static/media/boxicons.df635aaf04cd75132f62.woff2",
+    "index.html": "/Koteswari179.github.io/test1/index.html",
+    "main.60a5d51a.css.map": "/Koteswari179.github.io/test1/static/css/main.60a5d51a.css.map",
+    "main.467791da.js.map": "/Koteswari179.github.io/test1/static/js/main.467791da.js.map",
+    "453.56f46472.chunk.js.map": "/Koteswari179.github.io/test1/static/js/453.56f46472.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.60a5d51a.css",
+    "static/js/main.467791da.js"
+  ]
+}
