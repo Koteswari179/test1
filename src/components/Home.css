@@ -1,0 +1,745 @@
+.section-hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .section-hidden.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  
+  
+  
+  
+  
+  .home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    overflow: hidden;
+  
+  }
+  
+  .home-right {
+    flex: 1;
+    opacity: 0;
+    transform: translateX(100%);
+    animation: slideIn 1s forwards;
+  
+    animation-delay: 0.5s;
+  }
+  
+  @keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideUp {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .home-left {
+    opacity: 0;
+    animation: slideUp 1s ease-out forwards;
+  }
+  
+  .home-left.animate {
+    animation-delay: 0.001s;
+  }
+  
+  .home-left h1 {
+    color: #00008b; /* Set the color to dark blue */
+    font-size: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 100px;
+    animation-delay: 0.5s; /* Animation delay for h1 */
+  }
+  
+  .home-left p {
+    color: gray;
+    font-size: 23px;
+    margin-right: 100px;
+    margin-left: 100px;
+    animation-delay: 1s; /* Animation delay for p */
+  }
+  .home-left {
+    max-width: 50%; /* Take up to 50% width of the container */
+    text-align: left; /* Align content to the left */
+  }
+  
+  .home-left-button:hover {
+    background-color: #00008b; /* Dark blue background color on hover */
+    color: white; /* White text color on hover */
+  }
+  
+  .home-image {
+    width: 100%; /* Ensure image fills its container */
+    max-width: 500px; /* Set maximum width for the image */
+    height: auto;
+    animation: moveUpDown 2s infinite alternate ease-in-out; /* Animation added */
+    margin-top: 50px;
+    margin-right: 100px;
+  }
+  
+  @keyframes moveUpDown {
+    0% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(-20px); /* Adjust value as needed */
+    }
+  }
+  
+  .client-back-images {
+    background-color: #f3f9fd;
+    padding-bottom: 20px;
+    padding-left: 20px; /* Increase padding-left to move images to the right */
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    padding-top: 20px;
+  
+  }
+  
+  
+  
+  /* Adjust margin for the first image */
+  .client-image1 {
+    width: 100px;
+    height: auto;
+    margin-left: 100px;
+  }
+  .client-back-images img:first-child {
+    margin-left: 5px;
+    margin-right: 1px;
+    text-align: center;
+  }
+  
+  .client-back-images img:last-child {
+    margin-right: 100px;
+    text-align: center;
+  }
+  
+  
+  .client-back-images img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+  }
+  .client-back-images img:first-child {
+    margin-left: 100px;
+  }
+  .client-back-images img:hover {
+    filter: grayscale(0%);
+  }
+  
+  
+  /* Keyframes for the animations */
+  
+  /* Classes to trigger the animations */
+  
+  /* Ensure the initial hidden state */
+  
+  
+  
+  .about-container {
+    display: flex; /* Use flexbox for the layout */
+    justify-content: space-between; /* Distribute space between the items */
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px; /* Optional: Add some space between the items */
+    padding: 20px; /* Add padding for better spacing */
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-right: 100px;
+  }
+  
+  .about-left-side {
+    width: 48%; /* Adjust the width as needed to fit side by side */
+    padding: 5px; /* Add padding for better spacing */
+    font-family: Arial, sans-serif; /* Set a default font family */
+    font-size: 16px; /* Set a default font size */
+    line-height: 1.6; /* Improve readability with line height */
+    border-radius: 5px; /* Slightly round the corners */
+    text-align: left;
+    margin-left: 100px;
+    margin-right: 30px;
+  }
+  .about-left-side i {
+    margin-right: 10px;
+  
+    color: #00008b;
+  }
+  .about-left-side p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .about-right-side {
+    width: 48%; /* Adjust the width as needed to fit side by side */
+    padding: 5px; /* Add padding for better spacing */
+    font-family: Arial, sans-serif; /* Set a default font family */
+    font-size: 16px; /* Set a default font size */
+    line-height: 1.6; /* Improve readability with line height */
+    border-radius: 5px; /* Slightly round the corners */
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 30px;
+  }
+  
+  .about-right-button {
+    font-size: 16px; /* Font size for the button */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Change cursor on hover */
+    border: 2px solid #00008b; /* Dark blue border */
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 50px;
+  }
+  
+  .about-right-button:hover {
+    background-color: #4aa3df; /* Dark blue background color on hover */
+    color: white; /* White text color on hover */
+  }
+  
+  .home-left-button {
+    margin-left: 100px;
+    margin-top: 50px;
+    font-size: 16px;
+    border-radius: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  
+    color: #00008b; /* Dark blue text color */
+    background-color: transparent; /* Transparent background */
+    border: 2px solid #00008b; /* Dark blue border */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  
+  
+  .section-about {
+    display: flex;
+    justify-content: left; /* Center the image horizontally */
+    margin-left: 100px; /* Adjust margin as needed */
+    margin-right: 100px;
+  }
+  
+  .section-about img {
+    width: 450px; /* Set image width */
+    height: 450px; /* Maint
+    ain aspect ratio */
+    border-radius: 50%;
+  }
+  
+  
+  .count-box i {
+    border: #00008b;
+    font-size: 36px;
+    color: #00008b;
+    margin-right: 20px;
+    text-align: left;
+    margin-top: 300px;
+  }
+  .count-box {
+    margin-top: 70px;
+    margin-right: 10px;
+    font-size: 16px;
+    margin-left: -10%;
+  }
+  .count-box p {
+    margin-left: 100px;
+  }
+  
+  
+  .purecounter {
+    font-size: 18px; /* Adjust counter font size */
+    font-weight: bold;
+    color: #000; /* Adjust counter color */
+  }
+  /* Keyframes for bottom to top animation */
+  @keyframes slideInFromBottom {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Services */
+  .services {
+    /* margin-top: 30px; */
+    padding: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .services-title {
+    display: flex;
+    align-items: center; /* Vertically center align items */
+    justify-content: center; /* Horizontally center align items */
+  }
+  
+  .services-text {
+    text-align: center;
+    font-size: 17px;
+  }
+  .service-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between columns */
+    justify-content: space-between;
+    background-color: white;
+  }
+  
+  .service-row {
+    flex: 1 1 calc(25% - 20px); /* Adjust width to fit four columns with gap */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #f9f9f9; /* Initial background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: add shadow for visual separation */
+    box-sizing: border-box; /* Ensure padding is included in the width calculation */
+    padding: 10px; /* Ensure text stays within the box */
+    height: 530px;
+    margin-top: 30px;
+    position: relative; /* For hover effect */
+    overflow: hidden; /* Prevent overflow */
+    animation: slideInFromBottom 1s ease-out; /* Apply animation */
+    border-radius: 10px;
+  }
+  
+  .service-row::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: radial-gradient(
+      circle at top right,
+      #00008b 0%,
+      #00008b 50%,
+      transparent 50%
+    );
+    transform: scale(0);
+    transform-origin: top right;
+    transition: all 0.3s ease;
+    z-index: 0;
+  }
+  
+  .service-row:hover::before {
+    transform: scale(2);
+  }
+  
+  .service-row:hover {
+    color: white; /* Change text color on hover */
+    border-radius: 10px;
+  }
+  
+  .service-row:hover i {
+    background-color: white; /* Change icon background color on hover */
+    color: #00008b; /* Change icon color on hover */
+  }
+  
+  .service-row * {
+    position: relative; /* Ensure content stays above the hover effect */
+    z-index: 1;
+  }
+  
+  .service-row i {
+    margin-bottom: 10px;
+    background-color: #5d08f1; /* Background color for the circle */
+    border: 2px solid #ccc; /* Optional: border color for the circle */
+    border-radius: 50%; /* Make the icon background a circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px; /* Diameter of the circle */
+    height: 45px; /* Diameter of the circle */
+    box-shadow: 0 2px 4px rgba(54, 4, 234, 0.1);
+    font-size: 45px; /* Optional: shadow for the circle */
+    background-color: #00008b;
+    color: white;
+    padding: 8px;
+    margin-top: 10px;
+  }
+  
+  .service-row h3 {
+    margin: 0;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .service-row p {
+    text-align: left; /* Align content to the left */
+    font-size: 17px;
+    padding-top: 10px;
+    padding-right: 10px;
+  
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1000px) {
+    .services {
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+  
+    .service-row {
+      flex: 1 1 calc(33.333% - 20px); /* Three columns */
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .services {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  
+    .service-row {
+      flex: 1 1 calc(50% - 20px); /* Two columns */
+    }
+  }
+  
+  @media (max-width: 1px) {
+    .service-row {
+      flex: 1 1 100%; /* One column */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .services {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  
+    .service-row {
+      padding: 15px;
+      height: auto; /* Adjust height to fit content */
+    }
+  
+    .service-row i {
+      width: 40px;
+      height: 40px;
+      font-size: 35px;
+    }
+  
+    .service-row h3 {
+      font-size: 17px;
+    }
+  
+    .service-row p {
+      font-size: 15px;
+    }
+  }
+  
+  /* Title Styles */
+  .about-title, .features-title, .contact-title {
+    display: flex;
+    align-items: center; /* Vertically center align items */
+    justify-content: center; /* Horizontally center align items */
+    font-size: 20px;
+  }
+  
+  .horizontal-line {
+    border-top: 2px solid #00008b; /* Adjust thickness and color as needed */
+    width: 5%; /* Adjust width as needed */
+    margin: 10px; /* Add margin for spacing */
+  }
+  
+  /* ---------- */
+  
+  
+  /* PureCounter */
+  .purecounter {
+    font-size: 28px; /* Adjust counter font size */
+    color: #000; /* Adjust counter color */
+  }
+  
+  
+  
+  /*  service -- */
+  
+  .about-title {
+    display: flex;
+    align-items: center; /* Vertically center align items */
+    justify-content: center; /* Horizontally center align items */
+    margin-top: 100px;
+  }
+  
+  .features-title {
+  
+    display: flex;
+    align-items: center; /* Vertically center align items */
+    justify-content: center; /* Horizontally center align items */
+    margin-top: 100px;
+  }
+  
+  .contact-title {
+    display: flex;
+    align-items: center; /* Vertically center align items */
+    justify-content: center; /* Horizontally center align items */
+    margin-top: 100px;
+  }
+  
+  .horizontal-line {
+    border-top: 2px solid #00008b; /* Adjust thickness and color as needed */
+    width: 5%; /* Adjust width as needed */
+    margin: 10px; /* Add margin for spacing */
+  }
+  
+  .purecounter {
+    font-size: 28px; /* Adjust counter font size */
+    color: #000; /* Adjust counter color */
+  }
+  
+  /*  */
+  .process {
+    padding: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+  }
+  .process-title {
+    display: flex;
+    align-items: center; /* Vertically center align items */
+    justify-content: center; /* Horizontally center align items */
+  }
+  
+  .process-text {
+    text-align: center;
+    font-size: 18px;
+  }
+  .process-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between rows and columns */
+  }
+  
+  .process-row {
+    flex: 1 1 calc(50% - 40px); /* Adjust width to fit two columns with gap, accounting for margins */
+    background: #f9f9f9; /* Optional: add background for visual separation */
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0); /* Optional: add shadow for visual separation */
+    box-sizing: border-box; /* Ensure padding is included in the width calculation */
+    margin-top: 100px;
+    height: 280px;
+    margin-right: 30px;
+    border-radius: 10px;
+    width: 300px;
+  }
+  
+  .process-row:hover {
+    background-color: #00008b; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+  }
+  
+  .process-row h2 {
+    margin: 0 0 10px;
+    font-size: 22px;
+  }
+  
+  .process-row p {
+    margin: 0;
+    font-size: 17px;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 18px;
+  }
+  
+  .features {
+    padding-top: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  
+  .features-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between columns */
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding-top: 20px;
+  }
+  
+  .features-text {
+    text-align: left;
+    font-size: 17px;
+  }
+  .features-box {
+    flex: 1 1 calc(20% - 20px); /* Adjust width to fit columns with gap */
+    display: flex;
+    align-items: center; /* Align items vertically centered */
+    background: #f9f9f9; /* Optional: add background for visual separation */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: add shadow for visual separation */
+    box-sizing: border-box; /* Ensure padding is included in the width calculation */
+    margin-right: 15px;
+  }
+  .features-box a {
+    text-decoration: none;
+    color: inherit; /* This ensures the link inherits the color of its parent */
+  }
+  
+  .features-box i {
+    margin-right: 5px; /* Space between icon and text */
+    font-size: 32px;
+    margin-left: 10px;
+  }
+  .ri-code-box-line {
+    color: #5578ff;
+  }
+  
+  .ri-window-line {
+    color: #ffbb2c;
+  }
+  
+  .ri-creative-commons-by-line {
+    color: red;
+  }
+  
+  .ri-play-circle-line {
+    color: #e361ff;
+  }
+  .ri-search-eye-line {
+    color: rgb(42, 194, 245);
+  }
+  .ri-todo-line {
+    color: #ffa76e;
+  }
+  .ri-map-pin-line {
+    color: #dbce11;
+  }
+  .ri-bar-chart-grouped-line {
+    color: blue;
+  }
+  .ri-contacts-book-line {
+    color: #b2904f;
+  }
+  .ri-disc-line {
+    color: #b20969;
+  }
+  
+  .ri-calendar-event-line {
+    color: orangered;
+  }
+  .ri-advertisement-fill {
+    color: #29cc61;
+  }
+  
+  .contact {
+    margin-top: 150px;
+  }
+  
+  .contact-container {
+    display: flex;
+    background-color: white; /* Light grey background for the first part */
+    text-align: left;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  
+  .contact-page p {
+    font-size: 16px;
+    margin-right: 30px;
+    margin-left: 5px;
+  }
+  
+  .contact-info i {
+    font-size: 30px;
+    color: #00008b;
+  }
+  .contact-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 100px;
+    margin-left: -15%;
+  }
+  .contact-info p {
+    font-size: 16px;
+  }
+  
+  .contact-details {
+    margin-right: 170px;
+  }
+  
+  /* ContactForm.css */
+  .contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .contact-form-input {
+    width: 280%;
+    padding: 10px;
+    border: 1px solid #ccc;
+  
+    font-size: 16px;
+    margin-bottom: 15px;
+    margin-left: -200%;
+  }
+  
+  .contact-form-textarea {
+    width: 285%;
+    padding: 5px;
+    border: 1px solid #ccc;
+  
+    font-size: 18px;
+    height: 100px;
+    margin-bottom: 15px;
+    margin-left: -200%;
+  }
+  
+  .contact-form-button {
+    width: 120%;
+    padding: 13px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00008b;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: -120px;
+    border-radius: 50px;
+  }
+  
+  .contact-form-button:hover {
+    background-color: #4aa3df;
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  

@@ -1,0 +1,42 @@
+/* Success.css */
+
+.success-container {
+    background-color: #000000;
+    text-align: left;
+    color: white;
+    height: 100vh; /* Set the container height to fill the viewport */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+  
+  .success-content {
+    max-width: 400px; /* Increased maximum width for the content */
+    border: 2px solid white; /* Add border */
+    padding: 20px; /* Add padding */
+    background-color: white;
+    color: black; 
+    padding-right: 150px;
+    text-align: left;
+  }
+  
+  .success-content h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .success-content a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: green; /* Adjust as needed */
+    font-size: 18px; /* Adjust as needed */
+  }
+    
+  .success-content i {
+    margin-right: 8px; /* Adjust spacing as needed */
+    font-size: 25px; /* Adjust icon size as needed */
+  }
+  
+  
